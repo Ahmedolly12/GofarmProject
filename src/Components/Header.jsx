@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Header.css"
 import bell from "../Asset/Bell.png"
+import cart from "../Asset/cart.png"
 
 const Header = () => {
   return (
@@ -23,9 +24,13 @@ const Header = () => {
             </select>
             <input className='srch' type="search"placeholder="  | Search Products..."/>
             <i class="fa fa-search"></i>
+           
         </div>
         <div className="icons">
             <img src={bell} alt=""/>
+            <img src={cart} alt=""/>
+           
+           
         </div>
     </div>
   )

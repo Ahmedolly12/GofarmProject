@@ -43,3 +43,8 @@ select{
     right: 350px;
     bottom:25px;
 }
+.icons{
+    display:flex;
+    justify-content: space-around;
+    gap: 2em;
+}

@@ -1,7 +1,11 @@
+
 .productpage-container{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    font-family: 'Nunito', sans-serif;
+    margin-left:10em;
+    margin-right:2em;
  }
  .product-desc{
     display: flex;
@@ -13,4 +17,32 @@
     justify-content: center;
     padding-top: 8em;
     gap:1em;
+}
+h5{
+    font-weight:700;
+    font-size:30px;
+}
+.right-text{
+    margin-top:5em;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 1em;
+}
+h6{
+    font-size:25px;
+    font-weight: 700;
+    text-align: right;
+}
+span{
+    font-size: 15px;
+    font-weight: 100;
+}
+p.text, p.seller{
+    width:60%;
+    line-height:30px;
+    text-align:justify;
+   margin-top: 10px;
+   font-size: 18px;
+    
 }
