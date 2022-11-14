@@ -5,7 +5,8 @@ import Bana from "./../../Asset/banna.PNG"
 import bannna from "./../../Asset/bannna.PNG"
 import "./ProductPage.css"
 import Star from "../../Components/Star"
-import Increment from "../../Components/incrementDecreent"
+// import Increment from "../IncrementDecrement/"
+import Button from  "../../Components/Button"
 
 
 const ProductPage = () => {
@@ -22,7 +23,8 @@ const ProductPage = () => {
         setSliderData(slider);
       }
   return (
-       <div className="productpage-container">
+      <div>
+        <div className="productpage-container">
           <div className="nike">
             <img src={sliderData.value} height="" width="" alt=""/>
             <div className='flex-row'>
@@ -43,10 +45,18 @@ const ProductPage = () => {
                 Bananas are a popular fruit with many potential health benefits. They may boost your digestion and heart health thanks to their fiber and antioxidant contents. Plus, they may support weight loss because they're relatively low in calories, nutrient dense, and filling.</p>
                 <p className="seller"> Seller: <span>The Vine Farms</span></p>
                 <p className="seller"> Categories: <span>Fruits</span></p>
-              <Increment/>
+
+
+              {/* <Increment/> */}
+              <Button/>
             </div>
-           
         </div>
+        <div className="related">
+            <h3>Related Products</h3>
+          </div>
+           
+      </div>
+       
       
   )
 }

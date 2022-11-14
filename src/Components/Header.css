@@ -10,10 +10,11 @@
     display: flex;
     color: #000;
     padding: 10px;
+    font-size: 18px;
 
 }
 
-h3{
+.header-content h3{
     color:#149C08;
     font-family: 'Nunito', sans-serif;
     font-weight:700;
@@ -28,7 +29,11 @@ select, .srch{
     background: #F6F6F6;
     border: none;
     outline: none;
+    font-size: 18px;
 }
+/* option{
+    font-size:18px;
+} */
  
 select{
     border-top-left-radius: 5px;
@@ -42,9 +47,11 @@ select{
     position: absolute;
     right: 350px;
     bottom:25px;
+    cursor: pointer;
 }
 .icons{
     display:flex;
     justify-content: space-around;
     gap: 2em;
+    cursor: pointer;
 }

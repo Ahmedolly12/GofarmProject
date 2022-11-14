@@ -4,8 +4,9 @@ button {
     outline: none;
     cursor: pointer;
   }
-  .on {
+  .on,.Star-rating {
     color:#FFD105;
+    /* font-size: 100px; */
   }
   .off {
     color: #ccc;

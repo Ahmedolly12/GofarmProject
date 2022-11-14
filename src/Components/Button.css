@@ -1,0 +1,12 @@
+.btn-1{
+    background:#149C08;
+    width:200px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+a button{
+    color:#fff;
+}
