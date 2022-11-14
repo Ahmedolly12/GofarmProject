@@ -38,7 +38,7 @@ span{
     font-weight: 100;
 }
 p.text, p.seller{
-    width:60%;
+    width:90%;
     line-height:30px;
     text-align:justify;
    margin-top: 10px;
@@ -51,4 +51,13 @@ p.text, p.seller{
     padding: 1em;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
+}
+.quality{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* max-width:max-content; */
+}
+.quality p{
+    font-size: 20px;
 }

@@ -5,7 +5,7 @@ import Bana from "./../../Asset/banna.PNG"
 import bannna from "./../../Asset/bannna.PNG"
 import "./ProductPage.css"
 import Star from "../../Components/Star"
-// import Increment from "../IncrementDecrement/"
+import Increment from "../IncrementDecrement"
 import Button from  "../../Components/Button"
 
 
@@ -45,10 +45,14 @@ const ProductPage = () => {
                 Bananas are a popular fruit with many potential health benefits. They may boost your digestion and heart health thanks to their fiber and antioxidant contents. Plus, they may support weight loss because they're relatively low in calories, nutrient dense, and filling.</p>
                 <p className="seller"> Seller: <span>The Vine Farms</span></p>
                 <p className="seller"> Categories: <span>Fruits</span></p>
+              <div className="quality">
+                <p>Quality: </p>
+                <Increment/>
+                <Button/>
+              </div>
 
-
-              {/* <Increment/> */}
-              <Button/>
+  
+              
             </div>
         </div>
         <div className="related">
