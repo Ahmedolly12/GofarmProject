@@ -5,7 +5,7 @@ import bell from "../Asset/Bell.png"
 const Header = () => {
   return (
     <div className='header-content'>
-        <h1>GoFarmNG</h1>
+        <h3>GoFarmNG</h3>
         <div className="select">
             <select name="" id="">
                 <option value="All-Categories">All Categories</option>
@@ -21,7 +21,8 @@ const Header = () => {
                 <option value="Beverages">Beverages</option>
                 <option value="Meat">Meat</option>
             </select>
-            <input type="search"placeholder="search"/>
+            <input className='srch' type="search"placeholder="  | Search Products..."/>
+            <i class="fa fa-search"></i>
         </div>
         <div className="icons">
             <img src={bell} alt=""/>
