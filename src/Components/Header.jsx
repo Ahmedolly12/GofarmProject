@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Header.css"
+import bell from "../Asset/Bell.png"
 
 const Header = () => {
   return (
@@ -20,7 +21,10 @@ const Header = () => {
                 <option value="Beverages">Beverages</option>
                 <option value="Meat">Meat</option>
             </select>
-            {/* <input type={search} placeholder="search"/> */}
+            <input type="search"placeholder="search"/>
+        </div>
+        <div className="icons">
+            <img src={bell} alt=""/>
         </div>
     </div>
   )
