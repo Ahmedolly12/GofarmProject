@@ -1,8 +1,4 @@
 import {useState} from "react";
-import "./IncrementDecrement.css"
-
-
-
 
 
 function IncDecCounter(){
