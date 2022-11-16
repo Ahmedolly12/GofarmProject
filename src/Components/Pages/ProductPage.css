@@ -54,8 +54,9 @@ p.text, p.seller{
 }
 .quality{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 500px;
     /* max-width:max-content; */
 }
 .quality p{

@@ -18,6 +18,17 @@ input.form-control{
     border-top: none;
 
 }
-.input-group-prepend{
-    max-width:max-content;
-} */
+  */
+  button.plus, button.minus, label.num{
+    font-size: 20px;
+    color: #000;
+  }
+  button.plus, button.minus{
+    background:#E5F7E1;
+    border-radius: 5px;
+    width: fit-content;
+  }
+  label.num{
+    font-weight: 700;
+    font-size: 15px;
+  }

@@ -1,39 +1,56 @@
 import {useState} from "react";
+import "./IncrementDecrement.css"
 
 
-function IncDecCounter(){
-  let [num, setNum]= useState(0);
-  let incNum =()=>{
-    if(num<10)
-    {
-    setNum(Number(num)+1);
-    }
-  };
-  let decNum = () => {
-     if(num>0)
-     {
-      setNum(num - 1);
-     }
+function ButtonIncrement(props) {
+  
+   return (
+     
+      <button className="minus" style={{ marginLeft: '.5rem'}} onClick={props.onClickFunc}>
+      -
+      </button>
+   )
+}
+
+function ButtonDecrement(props) {
+  
+  return (
+    <button className="plus" style={{ marginLeft: '.5rem'}} onClick={props.onClickFunc}>
+     +
+     </button>
+  )
+}
+
+function Display(props) {
+  return (
+    <label className= "num"style={{ marginLeft: '.5rem'}} >{props.message}</label>
+  )
+}
+
+function App() {
+  const [counter, setCounter] = useState(1);
+  let incrementCounter = () => setCounter(counter + 1);
+  let decrementCounter = () => setCounter(counter - 1);
+
+  if(counter<=1) {
+    decrementCounter = () => setCounter(1);
+    
   }
- let handleChange = (e)=>{
-   setNum(e.target.value);
+  if(counter>=10) {
+    incrementCounter = () => setCounter(1);
+    
   }
 
-   return(
-    <>
-    <div className="col-xl-1">
-    <div class="input-group">
-  <div class="input-group-prepend">
-    <button class="btn btn-outline-primary" type="button" onClick={decNum}>-</button>
-  </div>
-  <input type="text" class="form-control" value={num} onChange={handleChange}/>
-  <div class="input-group-prepend">
-    <button class="btn btn-outline-primary" type="button" onClick={incNum}>+</button>
-  </div>
-</div>
-</div>
-   </>
+
+  return (
+    <div> 
+      <ButtonIncrement onClickFunc={decrementCounter}/>
+      <Display message={counter}/> 
+      <ButtonDecrement onClickFunc={incrementCounter}/>
+    </div>
   );
 }
 
-export default IncDecCounter;
+export default App;
+
+ 
